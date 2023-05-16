@@ -1,0 +1,39 @@
+*{
+    margin: 0%;
+    padding: 0%;
+  }
+    .gridcall{
+        margin-top:5px;
+      }
+    .card{
+      margin-top:20px;
+      align-items: center;
+      justify-content: center;
+      box-shadow:2px 3px rgba(137, 137, 137, 0.92);
+      border-radius:10px;
+    }
+    .card img {
+      max-height:170px;
+      background-size: cover;
+    }
+    .fmspace{
+        margin:50px;
+        background-color: rgba(128, 128, 128, 0.301);
+        padding:20px;
+    }
+    .carousel-item img{
+     background-size:100%;
+
+    }
+    .pagination{
+      justify-content: center;
+      align-self:center;
+      align-items: center;
+      text-align: center;
+    }
+    .marq img{
+      margin-top:10px;
+      width:100px;
+      border-radius:100px;
+      margin-left:30px;
+    }
