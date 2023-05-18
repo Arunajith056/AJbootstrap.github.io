@@ -4,17 +4,44 @@
   }
     .gridcall{
         margin-top:5px;
+        justify-content: center;
+            align-items: center;
+            text-align: center;
+         
       }
+    @media (max-width:579px) {
+        .card{
+            margin-left:100px;
+            
+        }
+       
+        
+    }
+    @media (max-width:425px) {
+        .card{
+            margin-left:70px;
+            
+        }}
+        @media (max-width:395px) {
+            .card{
+                margin-left:40px;
+                
+            }}
+   
+    
     .card{
       margin-top:20px;
       align-items: center;
       justify-content: center;
       box-shadow:2px 3px rgba(137, 137, 137, 0.92);
       border-radius:10px;
+      
     }
     .card img {
       max-height:170px;
       background-size: cover;
+      object-fit: fill;
+      border-radius:10px;
     }
     .fmspace{
         margin:50px;
@@ -30,10 +57,385 @@
       align-self:center;
       align-items: center;
       text-align: center;
+      margin-top:20px;
     }
     .marq img{
       margin-top:10px;
       width:100px;
       border-radius:100px;
       margin-left:30px;
+    pointer-events: none;
+    box-shadow:3px 3px rgba(0, 0, 0, 0.155);
+
     }
+    .navbar{
+        position:-webkit-sticky;
+    }
+    .carousel img:not(.imbdimg img){
+        filter: brightness(50%);
+        object-fit:fill;
+    }
+.imbdimg span{
+        color: aliceblue;
+        text-decoration: none;
+        font-size: small;
+    
+    }
+    .carousel{
+        filter: brightness(90%);
+    }
+    .btn{
+        margin-right:20px;
+
+    }
+    .banner-text{
+        font-size:25px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 800;
+
+    }
+    .banner-text::first-letter{
+        font-size:50px;
+        color: rgba(255, 4, 4, 0.697);
+    }
+
+/*footer*/
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+
+
+
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block;
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+   
+
+* {
+    -webkit-transition: 300ms;
+    transition: 300ms;
+  }
+  
+  .intro {
+    text-align: center;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  h1, h2, h3, h4, h5, p {
+    font-weight: 400;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  a:hover {
+    color: #6ABCEA;
+  }
+  
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 100%;
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  .movie-card {
+    background: #ffffff;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 315px;
+    margin: 2em;
+    border-radius: 10px;
+    display: inline-block;
+  }
+  
+  .movie-header {
+    padding: 0;
+    margin: 0;
+    height: 367px;
+    width: 100%;
+    display: block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .manOfSteel {
+    background: url("https://i.pinimg.com/originals/79/4c/a1/794ca1d4785592815fc54439ba7166af.jpg");
+    background-size: cover;
+  }
+  
+  .babyDriver {
+    background: url("https://th.bing.com/th/id/OIP.bCxYYZQWPTssCc-4zcfvrwHaFK?w=237&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7");
+    background-size: cover;
+  }
+  
+  .theDarkTower {
+    background: url("http://cdn.collider.com/wp-content/uploads/2017/03/the-dark-tower-poster.jpg");
+    background-size: cover;
+    background-position: 100% 100%;
+  }
+  
+  .bladeRunner2049 {
+    background: url("http://cdn.collider.com/wp-content/uploads/2017/05/blade-runner-2049-poster-ryan-gosling.jpeg");
+    background-size: cover;
+    background-position: 100% 80%;
+  }
+  
+  .header-icon-container {
+    position: relative;
+  }
+  
+  .header-icon {
+    width: 100%;
+    height: 367px;
+    line-height: 367px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 auto;
+    color: #ffffff;
+    font-size: 54px;
+    text-shadow: 0px 0px 20px #6abcea, 0px 5px 20px #6ABCEA;
+    opacity: .85;
+  }
+  
+  .header-icon:hover {
+    background: rgba(0, 0, 0, 0.15);
+    font-size: 74px;
+    text-shadow: 0px 0px 20px #6abcea, 0px 5px 30px #6ABCEA;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    opacity: 1;
+  }
+  
+  .movie-card:hover {
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.08);
+  }
+  
+  .movie-content {
+    padding: 18px 18px 24px 18px;
+    margin: 0;
+  }
+  
+  .movie-content-header, .movie-info {
+    display: table;
+    width: 100%;
+  }
+  
+  .movie-title {
+    font-size: 24px;
+    margin: 0;
+    display: table-cell;
+  }
+  
+  .imax-logo {
+    width: 50px;
+    height: 15px;
+    background: url("https://6a25bbd04bd33b8a843e-9626a8b6c7858057941524bfdad5f5b0.ssl.cf5.rackcdn.com/media_kit/3e27ede823afbf139c57f1c78a03c870.jpg") no-repeat;
+    background-size: contain;
+    display: table-cell;
+    float: right;
+    position: relative;
+    margin-top: 5px;
+  }
+  
+  .movie-info {
+    margin-top: 1em;
+  }
+  
+  .info-section {
+    display: table-cell;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .info-section:first-of-type {
+    text-align: left;
+  }
+  
+  .info-section:last-of-type {
+    text-align: right;
+  }
+  
+  .info-section label {
+    display: block;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: .5em;
+    font-size: 9px;
+  }
+  
+  .info-section span {
+    font-weight: 700;
+    font-size: 11px;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .movie-card {
+      width: 95%;
+      max-width: 95%;
+      margin: 1em;
+      display: block;
+    }
+  
+    .container {
+      padding: 0;
+      margin: 0;
+    }
+  }
+ .avail{
+    background-color: rgba(0, 0, 0, 0.074);
+ }
